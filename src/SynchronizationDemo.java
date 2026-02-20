@@ -42,9 +42,9 @@ public class SynchronizationDemo {
         MyThread2 t2 = new MyThread2(obj);
 
         t1.start();
-        t1.join();
+        t1.join();   // Ensures 5 prints completely first
 
         t2.start();
-        t2.join();
+        t2.join();   // Ensures 100 prints after
     }
 }
